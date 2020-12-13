@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda galeria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e64dadb2b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Jaiza Joa</h1>
+                <p>Modelo de Galeria</p>
+            </div>
+            <form action="">
+                <input type="text" class="barraBusqueda" id="barraBusqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid">
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades autos carros calles edificios"
+            data-descripcion="Ciudad metropolis con mucho trafico.">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="naturaleza paisajes montaña agua playa"
+            data-descripcion="Paisaje de una playa fria">
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="personas mujer morena humanos"
+            data-descripcion="Una tipa ahi de pelo negro.">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animales naturaleza leon felino"
+            data-descripcion="Un hermoso leon como los gloriosos super leones del Caracas xD.">
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="naturaleza hojas verde"
+            data-descripcion="Un poco de hojas ahi">
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades paisajes costa agua edificios"
+            data-descripcion="Ciudad costera metropolis con trafico de regreso.">
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="naturaleza paisajes olas agua rocas"
+            data-descripcion="Olas rompiendo en unas rocas.">
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="personas mujer pelirojas humanos"
+            data-descripcion="Otra tipa ahi, pero peliroja.">
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animales oso panda naturaleza"
+            data-descripcion="Un pandita hermoso, parece bebe.">
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="seleccionarfoto" id="seleccionarfoto">
+            <div class="contenedor-img">
+                <button id="btnCerrar"><i class="fas fa-times-circle"></i></button>
+                <img src="img/paisaje1.png" alt="">
+            </div>
+            <p class="descripcion">Descripcion Lorem ipsum dolor sit.</p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redesSociales">
+                <div class="contenedorIcono">
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="contenedorIcono">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="contenedorIcono">
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="creadoPor">
+                <p><i>Sitio diseñado por <a href="#">Jaiza</a> Joa</i></p>  
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
